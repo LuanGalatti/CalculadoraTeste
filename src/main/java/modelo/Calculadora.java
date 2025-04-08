@@ -45,4 +45,8 @@ public class Calculadora {
     public double getQuociente() {
         return (getValorA() / getValorB());
     }
+
+    public double getExponencial() {
+        return (Math.pow(getValorA(), getValorB()));
+    }
 }

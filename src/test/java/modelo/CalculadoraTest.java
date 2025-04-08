@@ -69,8 +69,20 @@ class CalculadoraTest {
         assertEquals(expResult, result, 0);
 
     }
-@AfterAll
-public void finalizacao(){
-    instance = null;
-}
+
+    /**
+     * Test of getExponencial method, of class Calculadora.
+     */
+    @Test
+    void testGetExponencial() {
+        double expResult = 16.0;
+        double result = instance.getExponencial();
+        assertEquals(expResult, result, 0);
+
+    }
+
+    @AfterAll
+    public void finalizacao() {
+        instance = null;
+    }
 }

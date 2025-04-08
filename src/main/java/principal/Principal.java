@@ -9,7 +9,7 @@ public class Principal {
         String opcao = "";
         Calculadora calculadora = new Calculadora();
         while (!opcao.equals("9")) {
-            opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao \n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n9 - Sair");
+            opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao \n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n6 - Exponencial \n9 - Sair");
             switch (Integer.parseInt(opcao)) {
                 case 1:
                     calculadora.setValorA(Double.parseDouble(JOptionPane.
@@ -29,6 +29,8 @@ public class Principal {
                 case 5:
                     JOptionPane.showMessageDialog(null, "Quociente: " + calculadora.getQuociente());
                     break;
+                case 6:
+                    JOptionPane.showMessageDialog(null, "Exponente: " + calculadora.getExponencial());
             }
         }
     }
