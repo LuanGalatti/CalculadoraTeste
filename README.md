@@ -1,0 +1,8 @@
+# Exercício 7
+## Sobre o projeto:
+Esse projeto tem como objetivo testar uma classe calculadora com funcionalidade de adicionar, subtrair, multiplicar, dividir e calcular exponente. 
+
+## Tecnologias utilizadas:
+O projeto utiliza Java 8. \
+O projeto foi desenvolivido no NetBeans 21. \
+Utiliza o Apache Maven para a automação de compilação.
