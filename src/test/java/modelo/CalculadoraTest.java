@@ -1,20 +1,13 @@
 package modelo;
 
+import modelo.Calculadora;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CalculadoraTest {
-
-    Calculadora instance;
-
-    @BeforeAll
-    void inicializacao() {
-        instance = new Calculadora(4.0, 2.0);
-    }
 
     /**
      * Test of getSoma method with a empty constructor, of class Calculadora.
@@ -32,6 +25,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetSoma() {
+        Calculadora instance = new Calculadora(4.0, 2.0);
         double expResult = 6.0;
         double result = instance.getSoma();
         assertEquals(expResult, result, 0);
@@ -42,6 +36,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetDiferenca() {
+        Calculadora instance = new Calculadora(4.0, 2.0);
         double expResult = 2.0;
         double result = instance.getDiferenca();
         assertEquals(expResult, result, 0);
@@ -53,6 +48,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetProduto() {
+        Calculadora instance = new Calculadora(4.0, 2.0);
         double expResult = 8.0;
         double result = instance.getProduto();
         assertEquals(expResult, result, 0);
@@ -64,6 +60,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetQuociente() {
+        Calculadora instance = new Calculadora(4.0, 2.0);
         double expResult = 2.0;
         double result = instance.getQuociente();
         assertEquals(expResult, result, 0);
@@ -75,14 +72,10 @@ class CalculadoraTest {
      */
     @Test
     void testGetExponencial() {
+        Calculadora instance = new Calculadora(4.0, 2.0);
         double expResult = 16.0;
         double result = instance.getExponencial();
         assertEquals(expResult, result, 0);
 
-    }
-
-    @AfterAll
-    public void finalizacao() {
-        instance = null;
     }
 }
